@@ -13,8 +13,8 @@ app.engine("ejs",ejsmate);
 const mongoose = require('mongoose');
 const {listingSchema} = require("./schema");
 const {reviewSchema} = require("./schema");
-const Listing = require("/Users/dushyantsinghtanwar/coding/majorproject/models/listing.js")
-const Review = require("/Users/dushyantsinghtanwar/coding/majorproject/models/reviews")
+const Listing = require("./listing");
+const Review = require("/Users/dushyantsinghtanwar/coding/majorproject/models/reviews");
 const passport = require("passport");
 const flash = require('express-flash');
 const session = require("express-session");

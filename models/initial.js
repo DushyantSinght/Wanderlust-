@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Listing = require("./listing");
+const Listing = require("../listing");
 const indata = require("../models/sdata")
 main()
     .then(()=>{

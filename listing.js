@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Review = require("./reviews");
+const Review = require("./models/reviews");
 const Listingschema = new mongoose.Schema({
     title: {
         type: String,
