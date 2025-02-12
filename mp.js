@@ -13,15 +13,15 @@ app.engine("ejs",ejsmate);
 const mongoose = require('mongoose');
 const {listingSchema} = require("./schema");
 const {reviewSchema} = require("./schema");
-const Listing = require("../majorproject/models/listing")
-const Review = require("../majorproject/models/reviews")
+const Listing = require("/Users/dushyantsinghtanwar/coding/majorproject/models/listing")
+const Review = require("/Users/dushyantsinghtanwar/coding/majorproject/models/reviews")
 const passport = require("passport");
 const flash = require('express-flash');
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const LocalStratergy = require("passport-local");
-const User = require("../majorproject/models/user")
-const {isLoggedin} = require("../majorproject/middleware");
+const User = require("/Users/dushyantsinghtanwar/coding/majorproject/models/user")
+const {isLoggedin} = require("/Users/dushyantsinghtanwar/coding/majorproject/middleware");
 if(process.env.NODE_ENV != "production"){
     require('dotenv').config();
     console.log("DB URL:", process.env.ATLASDB_URL);
