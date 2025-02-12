@@ -14,13 +14,13 @@ const mongoose = require('mongoose');
 const {listingSchema} = require("./schema");
 const {reviewSchema} = require("./schema");
 const Listing = require("./listing");
-const Review = require("/Users/dushyantsinghtanwar/coding/majorproject/models/reviews");
+const Review = require("./reviews");
 const passport = require("passport");
 const flash = require('express-flash');
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const LocalStratergy = require("passport-local");
-const User = require("/Users/dushyantsinghtanwar/coding/majorproject/models/user")
+const User = require("./user")
 const {isLoggedin} = require("/Users/dushyantsinghtanwar/coding/majorproject/middleware");
 if(process.env.NODE_ENV != "production"){
     require('dotenv').config();
