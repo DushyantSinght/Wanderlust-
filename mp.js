@@ -92,6 +92,9 @@ app.get("/demo",async (req,res)=>{
 // app.get("/",(req,res) => {
 //     res.send("server working well!")
 // });
+app.get("/",(req,res)=>{
+    res.send("Please add listing in url");
+});
 app.get("/listing",async (req,res)=>{
     let alllisting = await Listing.find()
     res.render("listing.ejs",{alllisting});
