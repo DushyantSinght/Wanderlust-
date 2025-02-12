@@ -21,7 +21,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const LocalStratergy = require("passport-local");
 const User = require("./user")
-const {isLoggedin} = require("/Users/dushyantsinghtanwar/coding/majorproject/middleware");
+const {isLoggedin} = require("./middleware");
 if(process.env.NODE_ENV != "production"){
     require('dotenv').config();
     console.log("DB URL:", process.env.ATLASDB_URL);
