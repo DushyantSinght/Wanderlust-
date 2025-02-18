@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const Listing = require("../listing");
-const indata = require("../models/sdata")
+const Listing = require("./listing");
+const indata = require("./sdata")
 main()
     .then(()=>{
     console.log("connection successful")
