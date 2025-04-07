@@ -1,2 +1,2 @@
 # Wanderlust-
-House booking website
+House booking/renting website
